@@ -1,0 +1,1 @@
+enum TipoEntrega { entrega, retirada, local }
