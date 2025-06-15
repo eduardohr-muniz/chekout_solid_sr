@@ -19,7 +19,7 @@ import 'external/services/cupom_api_service.dart';
 import 'external/services/endereco_api_service.dart';
 import 'external/services/pagamento_api_service.dart';
 import 'external/services/pedido_api_service.dart';
-import 'presentation/views/checkout_page.dart';
+import 'presentation/views/checkout_completo_page.dart';
 
 void main() {
   // Instâncias dos serviços externos (camada external)
@@ -62,5 +62,5 @@ void main() {
     salvarPedido: salvarPedido,
   );
 
-  runApp(MaterialApp(title: 'POC SOLID - Checkout', theme: ThemeData(primarySwatch: Colors.blue, useMaterial3: true), home: CheckoutPage(viewModel: viewModel)));
+  runApp(MaterialApp(title: 'POC SOLID - Checkout Completo', theme: ThemeData(primarySwatch: Colors.blue, useMaterial3: true), home: CheckoutCompletoPage(checkoutViewModel: viewModel)));
 }
